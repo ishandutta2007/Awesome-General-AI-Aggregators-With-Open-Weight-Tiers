@@ -1,245 +1,131 @@
-# Awesome-General-AI-Aggregators-With-Open-Weight-Tiers
-
-## Top General AI Aggregators with Open-Weight Tiers Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Multi-Model Access, Open-Weight Routing & Unified AI Interfaces*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **General AI Aggregators with Open-Weight Tiers**. These tools provide a single interface to frontier and open-weight models — Claude, GPT, Gemini, Llama, Qwen, DeepSeek, Mistral — with routing, fallback, and cost optimization across providers.
-
-
-
-**Examples** include Poe (by Quora), Perplexity Pro, NanoGPT, You.com Pro, OpenRouter, Phind Pro, ChatHub, DuckDuckGo AI Chat, TypingMind, and Vercel AI Playground (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, multi-provider gateways, and open chat interfaces — ideal for developers, teams, and organizations seeking transparent, vendor-independent access to the full model landscape.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[OpenRouter](https://openrouter.ai/)**  
-
-  The dominant AI model aggregator — **400+ models from 60+ providers** through a single OpenAI-compatible API. Features **automatic failover** when providers are down, **cost-optimized routing** (pick cheapest provider for same model), **BYOK (Bring Your Own Keys)** support, and **provider-level preferences**. **Open-weight tiers**: free models including Llama, Qwen, DeepSeek, Mistral variants with rate limits. **The de facto standard for multi-model access** — most open-source aggregators integrate with OpenRouter as a provider .
-
-
-
-- **[Poe (by Quora)](https://poe.com/)**  
-
-  Multi-model chat aggregator with **subscription tiers** ($19.99/month Premium, $249.99/month for 1M compute points). Access to Claude, GPT, Gemini, Llama, and custom bots. Features **Poe API** for programmatic access, **custom bot creation**, and **compute points** that abstract per-model costs. **The most consumer-friendly aggregator** with a polished UX.
-
-
-
-- **[Perplexity Pro](https://www.perplexity.ai/pro)**  
-
-  Answer engine with **model selector** — GPT-4o, Claude 3.5, Gemini, Grok, Llama, and Perplexity's own Sonar models. **$20/month** with **Pro Search** (deeper research), file uploads, and image generation. **Open-weight tiers**: includes access to Llama 3.1 405B and other open models. **The leading AI search aggregator** with citation-first answers.
-
-
-
-- **[You.com Pro](https://you.com/)**  
-
-  AI assistant with **multi-model access** — GPT-4, Claude, Gemini, Llama, and open models. Features **Custom Agents**, file uploads, and web search. **$20/month** with team plans. **Open-weight tiers**: includes open models for cost-sensitive queries.
-
-
-
-- **[NanoGPT](https://nano-gpt.com/)**  
-
-  Pay-per-prompt aggregator with **$0.01 minimum** and no subscription. Access to 100+ models including open-weight tiers. Features **model comparison**, image generation, and API access. **The most accessible pay-as-you-go aggregator**.
-
-
-
-- **[Phind Pro](https://www.phind.com/)**  
-
-  AI search engine focused on developers. Features **model selector** (GPT-4, Claude, Llama, Phind's own models) and **code-aware search**. **$20/month** for Pro. **Open-weight tiers**: uses open models for standard queries.
-
-
-
-- **[ChatHub](https://chathub.gg/)**  
-
-  Browser extension aggregating **ChatGPT, Claude, Gemini, Copilot, Perplexity, and more** in one interface. Features **side-by-side model comparison**, prompt library, and **local API key storage**. **The most privacy-focused browser aggregator**.
-
-
-
-- **[DuckDuckGo AI Chat](https://duckduckgo.com/aichat)**  
-
-  **Free, anonymous access** to GPT-4o mini, Claude 3 Haiku, Llama 3.3, and Mistral. **No account required**, **no chat data used for training**, and **anonymized queries**. **The most privacy-preserving free aggregator**.
-
-
-
-- **[TypingMind](https://www.typingmind.com/)**  
-
-  Bring-your-own-API-key chat interface with **one-time $39 license** (or $99 for teams). Features **multi-model support** (OpenAI, Anthropic, Google, OpenRouter, local models), **prompt library**, **plugins**, and **local data storage**. **The most cost-effective BYOK aggregator**.
-
-
-
-- **[Vercel AI Playground](https://sdk.vercel.ai/playground)**  
-
-  Free model comparison playground from Vercel. Features **side-by-side model comparison**, **streaming responses**, and **code generation** from comparisons. **The most developer-friendly free playground**.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[LibreChat](https://github.com/danny-avila/LibreChat)**  
-
-  **The most feature-complete open-source AI aggregator** — enhanced ChatGPT clone with **multi-provider support** (OpenAI, Anthropic, Google, OpenRouter, local models via Ollama), **agents**, **code interpreter**, **file handling**, and **conversation branching**. **20,000+ GitHub stars**. **The leading open-source alternative to Poe or TypingMind.** Self-hosted with Docker. MIT licensed .
-
-
-
-- **[Open WebUI](https://github.com/open-webui/open-webui)**  
-
-  **Extensible, feature-rich, user-friendly self-hosted AI platform** (source-available, BSD-3-Clause with branding clause). **100,000+ GitHub stars**. Features **multi-model support** (Ollama, OpenAI-compatible APIs), **RAG document integration**, **RBAC**, **pipelines/plugins**, and **offline operation**. **The most widely deployed open-source AI interface** — runs entirely offline with Ollama or connects to any OpenAI-compatible backend .
-
-
-
-- **[LobeChat](https://github.com/lobehub/lobe-chat)**  
-
-  Modern open-source AI chat framework with **multi-provider support** (OpenAI, Anthropic, Google, OpenRouter, local models). Features **plugin system**, **knowledge base**, **artifacts**, and **one-click deployment** (Vercel, Docker). **50,000+ GitHub stars**. **The most visually polished open-source chat interface** .
-
-
-
-- **[Chatbot UI](https://github.com/mckaywrigley/chatbot-ui)**  
-
-  Simple, clean open-source ChatGPT clone with **multi-model support** via OpenAI-compatible APIs. **28,000+ GitHub stars**. Features **prompt templates**, **conversation history**, and **Docker deployment**. **The most accessible starting point** for self-hosted AI chat .
-
-
-
-- **[BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)**  
-
-  Feature-rich open-source chat interface with **multi-provider support**. Features **prompt library**, **folder organization**, **share links**, and **Azure OpenAI** support. **10,000+ GitHub stars**. **The most customizable open-source chat UI** .
-
-
-
-- **[LiteLLM](https://github.com/BerriAI/litellm)**  
-
-  **The most comprehensive open-source multi-provider gateway** — 100+ LLM APIs through OpenAI-compatible interface. Features **cost tracking per key/user/team**, **rate limiting**, **fallback routing**, **load balancing**, **caching**, and **budget enforcement**. **20,000+ GitHub stars**. **The de facto standard for multi-model orchestration** — powers many other aggregators including LibreChat .
-
-
-
-- **[Portkey Gateway](https://github.com/Portkey-AI/gateway)**  
-
-  **Blazing fast AI gateway** with 250+ models and 45+ guardrails. Features **routing strategies** (fallback, load balance, conditional), **caching**, **retries**, and **observability**. **10,000+ GitHub stars**. **The most feature-rich open-source AI gateway for production** .
-
-
-
-- **[RouteLLM](https://github.com/lm-sys/RouteLLM)**  
-
-  **Framework for serving and evaluating LLM routers** — route queries to appropriate model based on complexity. Features **cost-quality tradeoff optimization**, **framework compatibility** (OpenAI client, LangChain), and **pre-trained routers** based on human preference data. **The leading open-source cost-optimized router** .
-
-
-
-- **[AI Gateway (Cloudflare)](https://github.com/cloudflare/ai-gateway)**  
-
-  Open-source AI gateway for **observability, caching, and rate limiting** across providers. Features **analytics**, **cost tracking**, and **fallback**. **The most cloud-native open-source gateway** .
-
-
-
-- **[LiteLLM Proxy UI](https://github.com/BerriAI/litellm)**  
-
-  See LiteLLM above.
-
-
-
-- **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)**  
-
-  All-in-one AI application with **multi-provider support**, **RAG**, **agents**, and **document chat**. **35,000+ GitHub stars**. Features **desktop app + Docker deployment**. **The most accessible open-source RAG + chat aggregator** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Vercel AI SDK](https://github.com/vercel/ai)** — TypeScript toolkit for building AI applications with **multi-provider support** (OpenAI, Anthropic, Google, Mistral, Llama, and more). **The standard for building custom AI interfaces** .
-
-- **[LangChain](https://github.com/langchain-ai/langchain)** — Framework for building LLM applications with **multi-provider abstraction** .
-
-- **[LlamaIndex](https://github.com/run-llama/llama_index)** — Data framework for LLM applications with **multi-model support** .
-
-- **[Continue](https://github.com/continuedev/continue)** — Open-source AI code assistant with **multi-model support** (Claude, GPT, Gemini, local). **The most popular open-source coding aggregator** .
-
-- **[Cline](https://github.com/cline/cline)** — Open-source AI coding agent with **every model** support. **70,000+ GitHub stars** .
-
-- **[OpenCode](https://github.com/sst/opencode)** — Open-source multi-provider agentic coding harness. **202,000 GitHub stars** .
-
-- Community **n8n** workflows for multi-model routing and cost alerting automation.
-
-
-
-**Frameworks for building custom systems**: Combine **LibreChat** or **Open WebUI** for the chat interface with **LiteLLM** for multi-provider gateway orchestration, **Portkey** for production routing and guardrails, **RouteLLM** for cost-optimized model selection, and **PostgreSQL** for persistence — creating a fully self-hosted, enterprise-grade AI aggregator platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- AI aggregators handling prompts and responses must comply with provider terms of service and data protection regulations (GDPR, CCPA, etc.). **Open-weight model licenses vary** — Llama has community license restrictions, Qwen is Apache 2.0, DeepSeek has its own license.
-
-- **Open-source AI aggregators are mature and production-ready.** LibreChat (20K+ stars) and Open WebUI (100K+ stars) provide full-featured multi-model chat . LiteLLM (20K+ stars) powers multi-provider orchestration for many other tools . Portkey (10K+ stars) provides production-grade routing and guardrails . **These are genuine alternatives to Poe and TypingMind.**
-
-- **OpenRouter is the dominant aggregator for a reason.** 400+ models, automatic failover, cost-optimized routing, and BYOK support — most open-source aggregators integrate with OpenRouter as a provider rather than building direct provider connections .
-
-- **RouteLLM is the open-source cost optimization leader.** Route queries to appropriate model based on complexity — achieving significant cost savings without quality degradation . **This is the most sophisticated open-source approach to model selection.**
-
-- **DuckDuckGo AI Chat is the privacy gold standard.** Free, anonymous, no account, no training on chats, anonymized queries . **No other aggregator matches this privacy posture.**
-
-- Self-hosted open-source solutions require proper security hardening, API key management, and ongoing maintenance. Multi-provider gateways handle sensitive credentials — access controls and audit trails are essential.
-
-
+# 🌟 Awesome-General-AI-Aggregators-With-Open-Weight-Tiers
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome General AI Aggregators Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🎯 Top General AI Aggregators with Open-Weight Tiers Ecosystem
 
+> 🚀 **Curated List of SaaS AI Platforms & Open-Source LLM Gateways**  
+> *Focused on Multi-Model Access, Open-Weight Routing (Llama, DeepSeek, Qwen, Mistral) & Unified AI Interfaces*  
+> 📅 **Last updated: October 2026**
 
-**Made for developers, teams, and organizations building transparent multi-model AI access.**  
+This repository is an SEO-optimized, comprehensive directory tracking notable **SaaS platforms** and **open-source GitHub projects** for **General AI Aggregators with Open-Weight Tiers**. These tools provide a unified single interface or API gateway to frontier proprietary models (Claude 3.7/3.5, GPT-4o, Gemini 2.5 Flash/Pro) and open-weight models (Llama 3.3/3.1, DeepSeek V3/R1, Qwen 2.5, Mistral Large) with automatic failover, smart routing, fallback resilience, and cost optimization across providers.
 
-Let's make General AI Aggregators more open, data-driven, and provider-independent.
+---
+
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The AI Gateway and multi-model aggregator sector is experiencing rapid expansion, sized at approximately **$2.76B to $3.7B in 2026** (up from ~$1.8B in 2025) and projected to surpass **$11B by 2032 at a CAGR of 27.5%**, while the broader multi-model integration and AI search market exceeds **$20B+**. The sector exhibits a **moderately fragmented and bifurcated market structure**: the enterprise gateway/routing infrastructure layer is consolidating rapidly toward standard proxy protocols (winner-take-most dynamics led by OpenRouter and LiteLLM alongside acquisitions by cybersecurity and cloud giants), whereas the user-facing chat aggregator and AI search space remains diversified among privacy-focused tools, developer search engines, and self-hosted open-source interfaces.
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+Below is the structured overview of commercial and hosted AI aggregators, sorted descending by company scale (valuation / annual revenue).
+
+| Platform | Valuation / Revenue Scale | Starting Tier Price | Free Tier / Trial Limits | Key Highlights & Open-Weight Support |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Perplexity Pro](https://www.perplexity.ai/pro)** | 🦄 **$20B–$22.6B Valuation** (~$750M ARR) | **$20.00 / month** (or $200/yr) | **Free forever plan**: Unlimited standard Quick Searches; ~5 Pro searches every 4 hours using standard models. | Leading AI search engine with model selector (GPT-4o, Claude 3.5, Sonar). Supports open-weight models including Llama 3.1 405B and DeepSeek. |
+| **[Vercel AI Playground](https://sdk.vercel.ai/playground)** | 🦄 **$9.3B Valuation** (~$200M+ ARR) | **$20.00 / month** (Pro plan starting tier) | **Free forever plan**: Free Hobby account with side-by-side model comparisons, community rate-limited credits, and 14-day Pro trial. | Real-time multi-model comparison interface and streaming testing ground across OpenAI, Anthropic, Google, and open-weight Hugging Face/Fireworks models. |
+| **[OpenRouter](https://openrouter.ai/)** | 🦄 **$1.3B Valuation** (~$150M ARR) | **Pay-as-you-go** ($5.00 min deposit; ~5% platform fee, pass-through token pricing) | **Free forever plan**: 50 requests/day & 20 requests/minute on all `:free` models (scales to 1,000 requests/day with $10 lifetime credit purchase). | The de facto standard API gateway with 400+ models from 60+ providers. Zero-cost open-weight tiers for Llama, DeepSeek R1/V3, Qwen, and Mistral. |
+| **[You.com Pro](https://you.com/)** | 🦄 **$1.5B Valuation** (~$45M ARR) | **$20.00 / month** (or $15/mo billed annually) | **Free forever plan**: Unlimited basic searches + 5 Smart/Research queries per day with free trial on sign-up. | AI assistant & web search aggregator with model switcher (Claude, GPT, Gemini, Llama 3.3). Features custom agents and live enterprise search API. |
+| **[Poe (by Quora)](https://poe.com/)** | 🏢 **$500M Valuation** (~$150M Quora ARR) | **$19.99 / month** (or $199.99/year) | **Free forever plan**: 3,000 compute points daily (resets every 24h) granting access to basic bots and open-weight models. | Consumer-friendly multi-bot aggregator by Quora. Unifies Claude, ChatGPT, Gemini, and open models (Llama, Mistral) with custom bot builder. |
+| **[DuckDuckGo AI Chat](https://duckduckgo.com/aichat)** | 🏢 **$250M–$750M Est. Valuation** (~$100M+ Revenue) | **$9.99 / month** (Duck.ai Plus bundle) | **Free forever plan**: Free anonymous access with daily rolling token caps (resets at 00:00 UTC); no account or credit card required. | Zero-logging, privacy-first interface routing to GPT-4o mini, Claude 3 Haiku, Llama 3.3 70B, and Mixtral. Anonymizes IP and prevents model training. |
+| **[Phind Pro](https://www.phind.com/)** | 💼 **~$11M Funding Raised** (YC S22) | **$20.00 / month** (Pro tier) | **Free forever plan**: 10 free Phind Instant queries per day; 30-day free trial on promotional tiers. | Developer-centric search engine and code generator with multi-model switcher between custom Phind-70B, GPT-4, and open-weight weights. |
+| **[TypingMind](https://www.typingmind.com/)** | 🚀 **Bootstrapped** (~$1.9M ARR) | **$39.00 one-time license** (Standard plan) | **Free forever plan**: Web client with essential chat features using user's BYOK keys; free web demo with limited daily prompts. | Premier Bring-Your-Own-Key (BYOK) interface. Connects to OpenAI, Anthropic, Google, Ollama, and OpenRouter with offline local encryption. |
+| **[ChatHub](https://chathub.gg/)** | 🚀 **Bootstrapped** (Est. <$1M ARR) | **$15.00 / month** (or $35.00 lifetime license) | **Free forever plan**: 2-model side-by-side comparison with basic web browser extension capabilities. | All-in-one browser extension client allowing 2-to-6 simultaneous side-by-side model completions with BYOK API support. |
+| **[NanoGPT](https://nano-gpt.com/)** | 🚀 **Bootstrapped** (Micro-SaaS) | **$0.01 pay-per-prompt** (Crypto/card micro-balance) | **Free forever plan**: Free trial credit balance upon registration; select free-tier open models with rate caps. | Privacy-first pay-as-you-go aggregator requiring no subscription. Micro-billing per token across 100+ open-source and proprietary models. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The following table lists the top open-source AI aggregators, multi-provider gateways, and self-hosted chat interfaces, sorted descending by GitHub stargazers. Each badge links directly to the respective repository's stargazers page.
+
+| Project & Repository | GitHub Stars | License | Description & Architecture |
+| :--- | :--- | :--- | :--- |
+| **[OpenCode](https://github.com/sst/opencode)** | [![Stars](https://img.shields.io/github/stars/sst/opencode?style=social&color=white)](https://github.com/sst/opencode/stargazers) | MIT | Open-source multi-provider agentic coding harness and terminal AI aggregator for proprietary and local open weights. |
+| **[Open WebUI](https://github.com/open-webui/open-webui)** | [![Stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social&color=white)](https://github.com/open-webui/open-webui/stargazers) | BSD-3-Clause | Extensible, feature-rich self-hosted AI interface. Full offline support with Ollama, OpenAI-compatible APIs, RAG, and multi-user RBAC. |
+| **[LangChain](https://github.com/langchain-ai/langchain)** | [![Stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social&color=white)](https://github.com/langchain-ai/langchain/stargazers) | MIT | Universal framework for building context-aware reasoning applications with unified multi-provider model routing. |
+| **[LobeChat](https://github.com/lobehub/lobe-chat)** | [![Stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=social&color=white)](https://github.com/lobehub/lobe-chat/stargazers) | MIT | Modern, visually polished open-source AI chat framework with multi-provider routing (OpenAI, Claude, Ollama, OpenRouter) and plugin ecosystem. |
+| **[Cline](https://github.com/cline/cline)** | [![Stars](https://img.shields.io/github/stars/cline/cline?style=social&color=white)](https://github.com/cline/cline/stargazers) | Apache-2.0 | Autonomous agentic coding assistant supporting custom API keys, OpenRouter, and open-weight models directly in VS Code. |
+| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** | [![Stars](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=social&color=white)](https://github.com/Mintplex-Labs/anything-llm/stargazers) | MIT | Complete enterprise-ready AI chat, RAG, and document agent platform supporting multi-LLM providers with zero setup Docker/Desktop apps. |
+| **[LiteLLM](https://github.com/BerriAI/litellm)** | [![Stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers) | MIT | Universal multi-provider proxy gateway. Unifies 100+ LLMs via OpenAI standard format with load balancing, fallback routing, and spend tracking. |
+| **[LlamaIndex](https://github.com/run-llama/llama_index)** | [![Stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social&color=white)](https://github.com/run-llama/llama_index/stargazers) | MIT | Data framework for LLM-based applications, RAG pipelines, and multi-model query federation over custom data. |
+| **[LibreChat](https://github.com/danny-avila/LibreChat)** | [![Stars](https://img.shields.io/github/stars/danny-avila/LibreChat?style=social&color=white)](https://github.com/danny-avila/LibreChat/stargazers) | MIT | Production-grade open-source chat platform clone with multi-provider support, code interpreter, conversation branching, and artifacts. |
+| **[One API](https://github.com/songquanpeng/one-api)** | [![Stars](https://img.shields.io/github/stars/songquanpeng/one-api?style=social&color=white)](https://github.com/songquanpeng/one-api/stargazers) | MIT | All-in-one LLM API routing gateway and management system. Redistributes and manages API quotas across OpenAI, Azure, Claude, and local models. |
+| **[Continue](https://github.com/continuedev/continue)** | [![Stars](https://img.shields.io/github/stars/continuedev/continue?style=social&color=white)](https://github.com/continuedev/continue/stargazers) | Apache-2.0 | Leading open-source autopilot coding extension connecting any open-weight or proprietary model to VS Code and JetBrains IDEs. |
+| **[Chatbot UI](https://github.com/mckaywrigley/chatbot-ui)** | [![Stars](https://img.shields.io/github/stars/mckaywrigley/chatbot-ui?style=social&color=white)](https://github.com/mckaywrigley/chatbot-ui/stargazers) | MIT | Clean, minimalist web interface for multiple AI models with prompt management and customizable BYOK endpoints. |
+| **[Vercel AI SDK](https://github.com/vercel/ai)** | [![Stars](https://img.shields.io/github/stars/vercel/ai?style=social&color=white)](https://github.com/vercel/ai/stargazers) | Apache-2.0 | The TypeScript library standard for building AI web apps with streaming and unified multi-provider abstractions. |
+| **[Portkey Gateway](https://github.com/Portkey-AI/gateway)** | [![Stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=social&color=white)](https://github.com/Portkey-AI/gateway/stargazers) | Apache-2.0 | Ultra-fast AI gateway with 250+ model connectors, automated retries, conditional fallbacks, caching, and production guardrails. |
+| **[BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)** | [![Stars](https://img.shields.io/github/stars/ztjhz/BetterChatGPT?style=social&color=white)](https://github.com/ztjhz/BetterChatGPT/stargazers) | MIT | Infinite-context client interface supporting OpenAI, Azure, and proxy gateways with local client-side storage. |
+| **[Helicone](https://github.com/Helicone/helicone)** | [![Stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers) | Apache-2.0 | Open-source LLM observability, cost tracking, caching, and multi-provider proxy gateway for production applications. |
+| **[RouteLLM](https://github.com/lm-sys/RouteLLM)** | [![Stars](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=social&color=white)](https://github.com/lm-sys/RouteLLM/stargazers) | Apache-2.0 | Model router from LMSYS that dynamically routes prompts to cheap/open models or frontier LLMs based on query complexity. |
+| **[BionicGPT](https://github.com/bionic-gpt/bionic-gpt)** | [![Stars](https://img.shields.io/github/stars/bionic-gpt/bionic-gpt?style=social&color=white)](https://github.com/bionic-gpt/bionic-gpt/stargazers) | Apache-2.0 | Enterprise on-premise generative AI portal enabling multi-model privacy routing behind corporate VPC firewalls. |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+We actively welcome community contributions to keep this ecosystem directory comprehensive, accurate, and up-to-date! 🌟
+
+1. **Fork the repository** to your GitHub profile.
+2. **Add or update an entry** in `README.md` following the tabular format and sorting criteria.
+3. **Include verified facts**: Specific starting tier pricing, explicit free tier limits, company metrics, and official links.
+4. **Submit a Pull Request** with a descriptive title explaining your addition.
+
+---
+
+## 💖 Support
+
+Thank you so much for exploring and supporting **Awesome-General-AI-Aggregators-With-Open-Weight-Tiers**! ❤️
+
+If you find this repository valuable:
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork it** and contribute new tools or updates.
+- 📢 **Share it** on X / Twitter, LinkedIn, Reddit, or Discord.
+- ☕ **Buy a coffee & sponsor**: Support ongoing open-source research and directory curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer
+
+- This list is community-curated for informational, architectural, and educational purposes. Inclusion does not imply official commercial endorsement.
+- Model licenses and terms vary across open-weight models (e.g., Llama 3 Community License, Apache 2.0 for Qwen, DeepSeek License). Always verify upstream compliance before enterprise deployment.
+- Pricing, company valuations, and free tier limits are subject to change by respective upstream vendors.
+
+---
+
+<p align="center">
+  <b>Built for developers, researchers, and enterprises engineering open, multi-model AI architectures. 🚀</b>
+</p>

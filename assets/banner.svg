@@ -1,0 +1,171 @@
+<svg fill="none" viewBox="0 0 1200 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .gradient-span {
+        fill: url(#primary-glow);
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        fill: #94a3b8;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      .pulse-circle {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .floating-particle-1 {
+        animation: floatOne 8s ease-in-out infinite alternate;
+      }
+      .floating-particle-2 {
+        animation: floatTwo 10s ease-in-out infinite alternate;
+      }
+      .node-beam {
+        stroke-dasharray: 8, 8;
+        animation: dash 20s linear infinite;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -200;
+        }
+      }
+      @keyframes floatOne {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        100% { transform: translateY(-25px) translateX(30px); opacity: 0.7; }
+      }
+      @keyframes floatTwo {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+        100% { transform: translateY(20px) translateX(-25px); opacity: 0.8; }
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.3; }
+        100% { transform: scale(1.08); opacity: 0.55; }
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g filter="url(#blur-glow)">
+    <circle cx="150" cy="80" r="130" fill="#38bdf8" opacity="0.25" class="floating-particle-1" />
+    <circle cx="1050" cy="280" r="140" fill="#a855f7" opacity="0.3" class="floating-particle-2" />
+    <circle cx="600" cy="340" r="110" fill="#4f46e5" opacity="0.2" class="pulse-circle" />
+  </g>
+
+  <!-- Tech Grid Background Lines -->
+  <g opacity="0.12" stroke="#64748b" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Network Routing Beams (Dynamic Flow Behind Foreground) -->
+  <g opacity="0.35">
+    <path d="M 120 180 Q 350 70 600 180 T 1080 180" fill="none" stroke="#38bdf8" stroke-width="2" class="node-beam" />
+    <path d="M 150 240 Q 420 310 650 200 T 1050 120" fill="none" stroke="#a855f7" stroke-width="2" class="node-beam" />
+  </g>
+
+  <!-- Header Badge / Top Tag -->
+  <g transform="translate(450, 42)">
+    <rect width="300" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1" opacity="0.9" />
+    <circle cx="18" cy="16" r="5" fill="#38bdf8" />
+    <text x="32" y="21" class="pill-text" fill="#38bdf8">⚡ UNIFIED MULTI-MODEL ROUTING</text>
+  </g>
+
+  <!-- Foreground Main Title & Branding -->
+  <!-- Note: Foreground text is layered on top with high contrast to guarantee total visibility -->
+  <text x="600" y="128" text-anchor="middle" class="title-text">
+    Awesome General AI Aggregators
+  </text>
+  <text x="600" y="174" text-anchor="middle" class="title-text" font-size="28px">
+    <tspan fill="#94a3b8">With </tspan>
+    <tspan class="gradient-span">Open-Weight Tiers &amp; LLM Gateways</tspan>
+  </text>
+
+  <!-- Subtitle Text -->
+  <text x="600" y="216" text-anchor="middle" class="subtitle-text">
+    Curated Hub of SaaS Gateways, Unified Model APIs &amp; Self-Hosted Open-Source AI Stacks
+  </text>
+
+  <!-- Interactive Model Ecosystem Pills (Bottom Row) -->
+  <g transform="translate(140, 262)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="36" rx="8" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="65" y="23" text-anchor="middle" class="pill-text">🌐 OpenRouter</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(145, 0)">
+      <rect width="130" height="36" rx="8" fill="url(#card-grad)" stroke="#6366f1" stroke-width="1.2" />
+      <text x="65" y="23" text-anchor="middle" class="pill-text">⚡ LiteLLM</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(290, 0)">
+      <rect width="140" height="36" rx="8" fill="url(#card-grad)" stroke="#ec4899" stroke-width="1.2" />
+      <text x="70" y="23" text-anchor="middle" class="pill-text">💬 Open WebUI</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(445, 0)">
+      <rect width="140" height="36" rx="8" fill="url(#card-grad)" stroke="#8b5cf6" stroke-width="1.2" />
+      <text x="70" y="23" text-anchor="middle" class="pill-text">🤖 LibreChat</text>
+    </g>
+    <!-- Pill 5 -->
+    <g transform="translate(600, 0)">
+      <rect width="140" height="36" rx="8" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.2" />
+      <text x="70" y="23" text-anchor="middle" class="pill-text">🔍 Perplexity Pro</text>
+    </g>
+    <!-- Pill 6 -->
+    <g transform="translate(755, 0)">
+      <rect width="165" height="36" rx="8" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="82" y="23" text-anchor="middle" class="pill-text">🦙 Open-Weight Tiers</text>
+    </g>
+  </g>
+
+  <!-- Border Outline -->
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="16" fill="none" stroke="#334155" stroke-width="1" />
+</svg>
