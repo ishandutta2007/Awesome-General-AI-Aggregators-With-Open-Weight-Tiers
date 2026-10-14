@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-General-AI-Aggregators-With-Open-Weight-Tiers"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome" /></a>
@@ -66,7 +66,7 @@ Below is the structured overview of commercial and hosted AI aggregators, sorted
 
 The following table lists the top open-source AI aggregators, multi-provider gateways, and self-hosted chat interfaces, sorted descending by GitHub stargazers. Each badge links directly to the respective repository's stargazers page.
 
-| Project & Repository | GitHub Stars | License | Description & Architecture |
+| Project & Repository | GitHub_Stars | License | Description & Architecture |
 | :--- | :--- | :--- | :--- |
 | **[OpenCode](https://github.com/sst/opencode)** | [![Stars](https://img.shields.io/github/stars/sst/opencode?style=social&color=white)](https://github.com/sst/opencode/stargazers) | MIT | Open-source multi-provider agentic coding harness and terminal AI aggregator for proprietary and local open weights. |
 | **[Open WebUI](https://github.com/open-webui/open-webui)** | [![Stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social&color=white)](https://github.com/open-webui/open-webui/stargazers) | BSD-3-Clause | Extensible, feature-rich self-hosted AI interface. Full offline support with Ollama, OpenAI-compatible APIs, RAG, and multi-user RBAC. |
